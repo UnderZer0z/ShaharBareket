@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Assistant', sans-serif;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: rgb(37, 36, 36);
+    color: rgb(235, 235, 235);
+    text-align: center;
+}
