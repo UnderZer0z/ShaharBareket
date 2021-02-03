@@ -20,3 +20,12 @@ header{
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+.tab{
+    text-align: center;
+    background-color: rgb(189, 189, 189);
+}
+
+section{
+    height: 50vh;
+}
