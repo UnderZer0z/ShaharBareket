@@ -21,6 +21,15 @@ header{
     padding-bottom: 50px;
 }
 
+.name h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.name h4 {
+    font-weight: 100;
+}
+
 .tab{
     text-align: center;
     background-color: rgb(189, 189, 189);
