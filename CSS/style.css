@@ -3,6 +3,7 @@
 body{
     font-family: 'Assistant', sans-serif;
     margin: 0px;
+    background: #27042D;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -11,30 +12,52 @@ h1, h2, h3, h4, h5, p {
 }
 
 header{
-    background-color: rgb(37, 36, 36);
-    color: rgb(235, 235, 235);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/Images/giphy.webp) no-repeat ;
+    background-size: cover;
+    color: #FFFFFF;
     text-align: center;
 }
 
 .name{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 240px;
+    padding-bottom: 240px;
 }
 
 .name h1 {
-    font-size: 42px;
+    font-size: 60px;
     font-weight: 700;
 }
 
 .name h4 {
-    font-weight: 100;
+    font-size: 24px;
+    font-weight: 275;
 }
 
-.tab{
-    text-align: center;
-    background-color: rgb(189, 189, 189);
+.minitext{
+    font-weight: 800;
 }
+
+.red{
+    color: red;
+}
+
 
 section{
+    text-align: center;
     height: 50vh;
+    color: #ffffff;
+}
+
+ul{
+    display: flex;
+    justify-content:  space-around;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+li{
+    font-size: 24px;
+    font-weight: bolder;
+    border-bottom: solid rgb(255, 0, 0) 2px;
 }
