@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
 
+/* page default css */
 body{
     font-family: 'Assistant', sans-serif;
     margin: 0px;
-    background: #27042D;
+    background: linear-gradient(0deg, rgba(22, 16, 21, 0.45), rgba(22, 16, 21, 0.45)), url(/Images/street.png) no-repeat center center fixed;
+    -webkit-background-size: cover ;
+    -moz-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    /* background: #27042D; */
 }
 
 h1, h2, h3, h4, h5, p {
     margin: 0px;
     padding: 0px;
 }
+
+/* header  */
 
 header{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/Images/giphy.webp) no-repeat ;
@@ -42,10 +50,14 @@ header{
 }
 
 
-section{
-    text-align: center;
-    height: 50vh;
-    color: #ffffff;
+/* nabbar css */
+
+nav{
+    background-color: rgba(0, 0, 0, 0.678);
+    padding: 10px;
+    padding-right: 18%;
+    padding-left: 18%;
+    margin-bottom: 40px;
 }
 
 ul{
@@ -54,10 +66,45 @@ ul{
     list-style-type: none;
     flex-wrap: wrap;
     padding: 0px;
+    margin: 0px;
 }
 
 li{
     font-size: 24px;
     font-weight: bolder;
-    border-bottom: solid rgb(255, 0, 0) 2px;
+    /* border-bottom: solid rgb(255, 0, 0) 2px; */
+    color: #FFFFFF;
+}
+
+
+/* main page */
+section{
+    margin: 5%;
+}
+
+section h2{
+    display: inline-flex;
+    margin-left: 20%;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.tab{
+    height: 30vh;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom: solid rgba(255, 0, 0, 0.6) 2px;
+}
+
+/* footer */
+
+footer{
+    background-color: rgba(0, 0, 0, 0.705);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
 }
