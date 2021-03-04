@@ -27,6 +27,7 @@ header{
     background-size: cover;
     color: #FFFFFF;
     text-align: center;
+    transition: ease-out 1s;
 }
 
 .name{
@@ -119,6 +120,8 @@ section h2{
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.9);
     border-bottom: solid rgba(255, 0, 0, 0.788) 4px;
+    padding: 2%;
+    padding: 2% 6% 2% 6%;
 }
 
 
