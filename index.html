@@ -7,6 +7,16 @@
     <link rel="shortcut icon" href="Images/icon.png" type="image/x-icon">
 </head> 
 <body>
+    
+    <div id="menu">
+        <a class="alink" href="#about"><h1><b class="minitext red">/</b>About </h1></a>
+        <a class="alink" href="#portfolio"><h1><b class="minitext red">/</b>Portfolio </h1></a>
+        <a class="alink" href="#blog"><h1><b class="minitext red">/</b>Blog </h1></a>
+        <a class="alink" href="#contact"><h1><b class="minitext red">/</b>Contact </h1></a>
+        <button id="btn-menu" onclick="menuclose()">EXIT<b class="minitext red">(</b><b class="type">_</b><b class="minitext red">)</b></button>
+    </div>
+
+
     <header>
 
         <div class="name">
@@ -27,15 +37,20 @@
 
     <nav id="moblie">
         <h1><b class="minitext red">/</b>Bareket<b class="type">_</b></h1>
-        <img src="Images/menu.svg" alt="" srcset="">
+        <button><img src="Images/menu.svg" onclick="menuopen()" ></button>
+        
+
     </nav>
+
+
+
 
     <section id="about">
         <h2><b class="minitext red">/</b>About Me</h2>
         <div class="tab about">
             <img src="Images/dino1.gif" class="dino" alt="dino logo">
             <h3>Hi. i'm Shahar.</h3>
-            <p>A self taught full stack Developer and content creator. in love with creating new and existing staff!
+            <p>A self taught full stack Developer and content creator. in love with creating new and existing stuff!
                  filming and editing videos, skilled with photoshop.
             </p>
         </div>
@@ -51,7 +66,7 @@
     <section id="blog">
         <h2><b class="minitext red">/</b>My Personal Blog</h2>
         <div class="tab blog">
-            <h1>My blog and staff</h1>
+            <h1>My blog and stuff</h1>
         </div>
     </section>
 

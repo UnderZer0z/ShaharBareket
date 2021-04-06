@@ -112,6 +112,38 @@ li:hover{
     animation: typing 1s steps(22), blink .5s step-end infinite alternate;
 }
 
+#moblie button{
+    background-color: rgb(31, 31, 31);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+#moblie button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#menu{
+    display: none;
+}
+
+#menu a h1 {
+    padding: 7%;
+}
+
+#menu #btn-menu {
+    padding: 10px;
+    margin-left: 10%;
+    margin-top: 10%;
+    border: none;
+    background-color: rgb(19, 19, 19);
+    /* border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px; */
+    color:#fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
 @keyframes typing {
     from {
       color: white;
@@ -123,6 +155,9 @@ li:hover{
       color: rgba(255, 255, 255, 0) ;
     }
   }
+
+
+
 
 
 /* main page */
@@ -237,10 +272,12 @@ footer{
     }
 
     body {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/Images/giphy.webp) no-repeat center center fixed  ;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/giphy.webp) no-repeat center center fixed  ;
       background-size: cover;
     }
 
+
+    /*moblie nav  */
     #moblie{
         display: flex;
         color: white;
@@ -249,4 +286,16 @@ footer{
         font-size: 25px;
         justify-content: space-between;
     }
+
+    #menu{
+        display: none;
+        position: fixed;
+        z-index: 10;
+        color:white;
+        background-color: rgba(0, 0, 0, 0.85);
+        width: 100%;
+        height: 100%;
+        padding: 20%;
+    }
+    
   }

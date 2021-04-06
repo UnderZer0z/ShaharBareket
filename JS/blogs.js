@@ -1,5 +1,20 @@
 const blogEl = document.querySelector('.blog')
 
+function menuopen(){
+    document.getElementById("menu").style.display = 'block';
+}
+
+
+function menuclose(){
+    document.getElementById("menu").style.display = 'none';
+}
+
+var links = document.querySelectorAll('.alink')
+
+links.forEach(element => {
+    element.addEventListener("click", menuclose);
+});
+
 
 function loadblog(data){
     console.log(data)
