@@ -4,7 +4,7 @@
 body{
     font-family: 'Assistant', sans-serif;
     margin: 0px;
-    background: linear-gradient(0deg, rgba(22, 16, 21, 0.45), rgba(22, 16, 21, 0.45)), url(/Images/street.png) no-repeat center center fixed;
+    background: linear-gradient(0deg, rgba(22, 16, 21, 0.45), rgba(22, 16, 21, 0.45)), url(../Images/street.png) no-repeat center center fixed;
     -webkit-background-size: cover ;
     -moz-background-size: cover;
     -moz-background-size: cover;
@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, p {
 /* header  */
 
 header{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/Images/giphy.webp) no-repeat ;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/giphy.webp) no-repeat ;
     background-size: cover;
     color: #FFFFFF;
     text-align: center;
