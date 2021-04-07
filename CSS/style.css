@@ -12,9 +12,11 @@ body{
     /* background: #27042D; */
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, p ,a {
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
+    color: inherit;
 }
 
 
@@ -129,11 +131,16 @@ li:hover{
 
 #menu a h1 {
     padding: 7%;
+    padding-left: 30%;
+}
+
+#menu a h1:hover {
+    background-color: rgba(175, 0, 0, 0.5);
 }
 
 #menu #btn-menu {
     padding: 10px;
-    margin-left: 10%;
+    margin-left: 30%;
     margin-top: 10%;
     border: none;
     background-color: rgb(19, 19, 19);
@@ -142,6 +149,10 @@ li:hover{
     color:#fff;
     font-size: 30px;
     font-weight: 700;
+}
+
+#menu #btn-menu:hover{
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 @keyframes typing {
@@ -240,7 +251,7 @@ section h2{
 
 .blog article .btn-link a:hover{
     background-color: rgb(255, 210, 210);
-    color: rgba(255, 0, 0, 0.788);;
+    color: rgba(255, 0, 0, 0.788);
 }
 
 .dino{
@@ -248,7 +259,55 @@ section h2{
 }
 
 
+/* Contact Me */
+.contact{
+    text-align: center;
+    height: auto;  
+}
 
+form{
+    text-align: center;
+}
+
+form input{
+    display: block;
+    text-align: left;
+}
+
+.lineput , textarea {
+    width: 80%;
+    border: none;
+    padding: 4px;
+    margin: 1%;
+    color: white;
+    font-size: 18px;
+    font-family: 'Assistant', sans-serif;
+    background-color: rgb(44, 44, 44);
+    border-bottom: solid rgba(255, 0, 0, 0.788) 4px ;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    resize: none;
+}
+
+.btn-sub{
+    border: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Assistant', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.btn-sub:hover{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
 
 /* footer */
 
@@ -295,7 +354,7 @@ footer{
         background-color: rgba(0, 0, 0, 0.85);
         width: 100%;
         height: 100%;
-        padding: 20%;
+        padding-top: 20%;
     }
     
   }

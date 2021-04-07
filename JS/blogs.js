@@ -17,17 +17,19 @@ links.forEach(element => {
 
 
 function loadblog(data){
-    console.log(data)
-    data.feed.entry.forEach(element => {
+
+    let element = data.feed.entry;
+
+    for(i = 0 ; i < 3 ; i++){
 
         let post = document.createElement('article')
 
         let title = document.createElement('h1')
-        title.innerHTML = element.title[0]._;
+        title.innerHTML = element[i].title[0]._;
         post.appendChild(title)
 
         let content = document.createElement('div')
-        content.innerHTML = element.content[0]._;
+        content.innerHTML = element[i].content[0]._;
         content.setAttribute('class','content')
         post.appendChild(content)
 
@@ -35,7 +37,7 @@ function loadblog(data){
         btn.setAttribute('class','btn-link')
         let link = document.createElement('a')
         link.innerText = 'המשך לקרוא'
-        link.href = element.link[4].$.href
+        link.href = element[i].link[4].$.href
         btn.appendChild(link)
         post.appendChild(btn)
 
@@ -43,7 +45,7 @@ function loadblog(data){
         //console.log(element.title[0]._)
         //console.log(element.content[0]._)
 
-    });
+    };
 }
 
 
