@@ -37,7 +37,8 @@ function loadblog(data){
         btn.setAttribute('class','btn-link')
         let link = document.createElement('a')
         link.innerText = 'המשך לקרוא'
-        link.href = element[i].link[4].$.href
+        // console.log(element[i].link[2].$.href)
+        link.href = element[i].link[2].$.href
         btn.appendChild(link)
         post.appendChild(btn)
 
