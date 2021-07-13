@@ -309,6 +309,19 @@ form input{
     color: white;
 }
 
+.CVwrapper{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.CVbtn{
+    background-color: rgba(255, 0, 0, 0.788);
+    padding: 4px 16px;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+}
+
 /* footer */
 
 footer{
