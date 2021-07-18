@@ -45,6 +45,10 @@ header{
 .name h4 {
     font-size: 24px;
     font-weight: 275;
+    background: #00000075;
+    display: inline;
+    padding: 5 30px;
+    /* border-bottom: rgba(255, 255, 255, 0.6) 1px solid; */
 }
 
 .alink{
@@ -320,6 +324,20 @@ form input{
     font-size: 36px;
     font-weight: 700;
     font-style: italic;
+}
+
+.socialicon{
+    width: 30px;
+    margin: 10px;
+    padding: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    border-bottom: rgb(5, 0, 0) solid 4px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 7px;
+}
+
+.social-wrapper{
+    margin-top: 20px;
 }
 
 /* footer */
