@@ -1,3 +1,7 @@
+html{
+    overflow-x: hidden !important;
+}
+
 body{
     font-family: 'Assistant', sans-serif;
     background-color: #1F1F1F;
@@ -10,6 +14,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 50px;
+    overflow-x: hidden !important;
 }
 
 
@@ -50,7 +55,6 @@ header {
             padding: 8px;
             /* background: #242424; */
             /* padding: 15px; */
-            
         }
     }
 }
@@ -73,6 +77,9 @@ section > div{
     border-radius: 0px 15px;
     padding: 4px 20px 34px;
     background: #37373793;
+    i#age{
+        cursor: pointer;
+    }
 }
 
 /* width */
