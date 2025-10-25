@@ -66,6 +66,7 @@ const latestPosts = await fetchLatestPosts(3);
 
 
 export default defineConfig({
+  base: '/',
   plugins: [
     tailwindcss(),
     handlebars({
