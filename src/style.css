@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-m: 900px;
+}
+
+body{
+  padding: 32px;
+  min-height: 100vh;
+  background-color: #1F1F1F;
+  color: white;
+  font-family: "Assistant" , sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  max-width: 800px;
+  margin: auto;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 384px;
+}
+
+b{
+  font-weight: 600;
+}
+
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.project{
+  max-width: 345px;
+}
+
+
+main {
+  margin-top: -20px;
+}
+
+h2{
+  background: black;
+  display: inline;
+  padding: 0px 8px;
+  cursor: default;
+}
+
+h2:hover{
+  text-decoration: underline;
+}
+
+h2:hover::before{
+  content: "#";
+}
+
+
+header iframe{
+  display: none;
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    max-width: 800px;
+  }
+
+  header{
+    align-items: flex-end;
+  }
+
+  header img{
+    display: none;
+  }
+
+  header iframe{
+    display: block;
+  }
+
+}

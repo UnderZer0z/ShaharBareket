@@ -1,167 +1,87 @@
-<html lang="he">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shahar Bareket 🦖</title>    
-    <link rel="shortcut icon" href="Images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./CSS/style.css">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/dino.gif" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+    <title>Shahar Bareket</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NNFKMZSEH"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NNFKMZSEH"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-4NNFKMZSEH');
-    </script>
-
-</head> 
-<body>
+    </script> -->
+  </head>
+  <body>
     
-    <div id="menu">
-        <a class="alink" href="#about"><h1><b class="minitext red">/</b>About </h1></a>
-        <a class="alink" href="#portfolio"><h1><b class="minitext red">/</b>Portfolio </h1></a>
-        <a class="alink" href="#blog"><h1><b class="minitext red">/</b>Blog </h1></a>
-        <a class="alink" href="#contact"><h1><b class="minitext red">/</b>Contact </h1></a>
-        <button id="btn-menu" onclick="menuclose()">EXIT<b class="minitext red">(</b><b class="type">_</b><b class="minitext red">)</b></button>
-    </div>
+    <header class="flex flex-row">
+      <h1 class="text-[62px] leading-[35px]">
+        <span class="font-[200] text-[48px]">Shahar</span>
+        <br>
+        <b class="font-[400] text-[48px]" >Bareket</b>
+      </h1>
+      <img src="/img/mobile-dino.svg" alt="mobile-dino" width="91" height="91" class="mt-[8px]">
 
+      
+      <iframe src="trex.html" frameborder="0" scrolling="no" width="100%" height="100%" loading="lazy"></iframe>
+      <style type="text/css">iframe { position: relative; margin-top: -32px; margin-bottom: -10px;}</style>
 
-    <header>
-
-        <div class="name">
-            <h1>Shahar Bareket</h1>
-            <h4><b class="minitext">&lt;</b> Full Stack Developer <b class="minitext red">/</b> Content Creator <b class="minitext">&gt;</b></h4>
-
-            <div class="social-wrapper">
-
-                <a href="https://dinodeveloper.blogspot.com/" target="_blank">
-                    <img src="Images\svg\blogger.svg" class="socialicon">
-                </a>
-
-                <a href="https://www.facebook.com/shahar.bareket.7/" target="_blank">
-                    <img src="Images\svg\facebook.svg" class="socialicon">
-                </a>
-
-                <a href="https://github.com/UnderZer0z" target="_blank">
-                    <img src="Images\svg\github.svg" class="socialicon">
-                </a>
-
-                <a href="https://www.instagram.com/shahar.bareket/" target="_blank">
-                    <img src="Images\svg\instagram.svg" class="socialicon">
-                </a>
-
-                <a href="https://www.linkedin.com/in/shahar-bareket-21372a20a/" target="_blank">
-                    <img src="Images\svg\linkedin.svg" class="socialicon">
-                </a>
-                
-                <a href="https://www.youtube.com/user/bareket12" target="_blank">
-                    <img src="Images\svg\youtube.svg" class="socialicon">
-                </a>
-        
-            </div>
-
-        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a class="alink" href="#about"><b class="minitext red">/</b>About </a></li>
-            <li><a class="alink" href="#portfolio"><b class="minitext red">/</b>Portfolio </a></li>
-            <li><a class="alink" href="#blog"><b class="minitext red">/</b>Blog </a></li>
-            <li><a class="alink" href="#contact"><b class="minitext red">/</b>Contact </a></li>
-        </ul>
-    </nav>
 
+    <main>
+      <h2 class="text-[24px] font-[600] ml-[2px]">
+        About Me
+      </h2>
+      
+      <hr class="my-[8px] text-[#3A3A3A] border-dashed border-t-[2px]">
+      
+      <div id="content">
+        <b>Hi </b>, I’m Shahar 👋 <br>
+        <b>I build things—</b> mostly with code, but also by shaping ideas into real products. As a software developer and maker, I love turning concepts into functional, user-friendly solutions. Whether it’s crafting sleek web applications, launching new projects, or experimenting with innovative ideas, I’m always up for a challenge.
+        <br>
+        <br>
+        Check out my projects below, and if you want to chat, feel free to reach out! 🚀
+      </div>
 
-    <nav id="moblie">
-        <h1><b class="minitext red">/</b>Bareket<b class="type">_</b></h1>
-        <button><img src="Images/menu.svg" onclick="menuopen()" ></button>
-        
+    </main>
 
-    </nav>
+    <section>
+      <h2 class="text-[24px] font-[600] ml-[2px] mb-[4px]">
+        Projects
+      </h2>
 
+      <hr class="my-[16px] text-[#3A3A3A] border-dashed border-t-[2px]">
 
+      <div id="Projects" class="flex gap-[16px] justify-between flex-wrap">
 
+        {{> project id="NotedInk" title="[W.I.P] - NotedInk" text="Simple Web-RPG game I made" img="/img/NotedInk-banner.webp" }}
 
-    <section id="about">
-        <h2><b class="minitext red">/</b>About Me</h2>
-        <div class="tab about">
-            <img src="Images/dino1.gif" class="dino" alt="dino logo">
-            <h3>Hey there!</h3>
-            <h4>My name's Shahar Bareket , a 21 y.o. full stack developer and content creator.</h4>
-            <p>
-                I started tinkering with computers from a young age. In my high school there were no CS studies so I decided to study communication and during that time taught myself programming.
-After highschool I enlisted to the IDF's central unit for special Investigations ("Yamlam") as a computer forensic specialist/software developer.
-            </p>
+        {{> project id="Lomcode" title="[W.I.P] - LomCode" text="Teaching programming for Israelis" img="/img/Lomcode.png" }}
 
-            <div class="CVwrapper">
-                <a class="CVbtn" href="/files/shahar-bareket_CV.pdf">
-                Resume
-                </a>
-            </div>
+        {{> project id="ScreamingHorse" title="[T.B.H] - ScreamingHorse" text="ScreamingFrog Free Alternative in the works" img="/img/SH-banner.png" }}
 
+        {{> project id="Trackdown" title="[T.B.H] - Trackdown" text="A light and easy-to-understand OSINT framework" img="/img/trackdown.webp" }}
 
-        </div>
+      </div>
+ 
     </section>
 
-    <section id="portfolio">
-        <h2><b class="minitext red">/</b>My Portfolio</h2>
-        <div class="tab">
+    {{> blog id="lomcode" }}
 
-            <h1>Here are some of my projects:</h1>
-            <br>
+    {{> contact id="contact" }}
 
-            <article>
-                <h1>LomCode.com</h1>
-                <hr>
-                <h1>[Work in Progress]</h1>
-            </article>
-
-            <br>
-
-            <article>
-                <h1>HyperFuze.com</h1>
-                <hr>
-                <h1>[Work in Progress]</h1>
-            </article>
-
-        </div>
-    </section>
-
-    <section id="blog">
-        <h2><b class="minitext red">/</b>My Personal Blog</h2>
-        <div class="tab blog">
-            <a href="https://dinodeveloper.blogspot.com/"><h1><b class="minitext red">[</b>My Personal Blog<b class="minitext red">]</b></h1></a>
-            <h3>just where i write stuff about my life.</h3>
-            <h3>it's in hebrew my native language so sorry if it doesn't relate to you :/</h3>
-            <hr>
-            <br>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2><b class="minitext red">/</b>Contact Me</h2>
-        <div class="tab contact">
-            <h3></h3>
-            <br>
-            <form action="https://mailthis.to/Bareket" method="POST" encType="multipart/form-data">
-                <input class="lineput" type="text" name="name" placeholder="Your name" required>
-                <input class="lineput" type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Enter your message here" rows="6" required></textarea>
-                <input type="hidden" name="_honeypot" value="">
-                <input class="btn-sub" type="submit" value="[Send]">
-            </form>
-        </div>
-    </section>
-
-    <footer>
-            <p> © 2021 all rights reserved to Shahar bareket</p>
+    <footer class="text-center">
+      <hr class="my-[16px] text-[#3A3A3A] border-dashed border-t-[2px]">
+      <p>© 2025 all rights reserved to Shahar bareket</p>
     </footer>
 
-
-    <script src="JS/blogs.js"></script>
-
-
-</body>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
