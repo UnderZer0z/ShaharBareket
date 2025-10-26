@@ -36,8 +36,8 @@ jobs:
           NODE_ENV: production
 
       # Add your custom domain file
-      - name: Add CNAME file for bareket.co
-        run: echo "bareket.co" > dist/CNAME
+      # - name: Add CNAME file for bareket.co
+      #   run: echo "bareket.co" > dist/CNAME
 
       - name: Upload build output
         uses: actions/upload-pages-artifact@v3

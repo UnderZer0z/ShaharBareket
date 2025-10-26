@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
     <title>Shahar Bareket</title>
+    <meta name="description" content="Shahar Bareket personal website -,
+    Software Developer, Maker, and Tech Enthusiast. Explore my projects and get in touch!" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NNFKMZSEH"></script>
     <script>
@@ -24,7 +26,7 @@
       <h1 class="text-[62px] leading-[35px]">
         <span class="font-[200] text-[48px]">Shahar</span>
         <br>
-        <b class="font-[400] text-[48px]" >Bareket</b>
+        <b class="font-[400] text-[48px]">Bareket</b>
       </h1>
       <img src="/img/mobile-dino.svg" alt="mobile-dino" width="91" height="91" class="mt-[8px]">
 
@@ -35,7 +37,7 @@
     </header>
 
 
-    <main>
+    <main id="about">
       <h2 class="text-[24px] font-[600] ml-[2px]">
         About Me
       </h2>
@@ -52,28 +54,28 @@
 
     </main>
 
-    <section>
+    <section id="projects">
       <h2 class="text-[24px] font-[600] ml-[2px] mb-[4px]">
         Projects
       </h2>
 
       <hr class="my-[16px] text-[#3A3A3A] border-dashed border-t-[2px]">
 
-      <div id="Projects" class="flex gap-[16px] justify-between flex-wrap">
+      <div class="flex gap-[16px] justify-between flex-wrap">
 
-        {{> project id="NotedInk" title="[W.I.P] - NotedInk" text="Simple Web-RPG game I made" img="/img/NotedInk-banner.webp" }}
+        {{> project id="NotedInk" title="[W.I.P] - NotedInk" text="Simple Web-RPG game I made" img="/img/notedInk-banner.webp" }}
 
-        {{> project id="Lomcode" title="[W.I.P] - LomCode" text="Teaching programming for Israelis" img="/img/Lomcode.png" }}
+        {{> project id="Lomcode" title="[W.I.P] - LomCode" text="Teaching programming for Israelis" img="/img/lomcode-banner.webp" }}
 
-        {{> project id="ScreamingHorse" title="[T.B.H] - ScreamingHorse" text="ScreamingFrog Free Alternative in the works" img="/img/SH-banner.png" }}
+        {{> project id="ScreamingHorse" title="[T.B.H] - ScreamingHorse" text="ScreamingFrog Free Alternative in the works" img="/img/screaminghorse-banner.webp" }}
 
-        {{> project id="Trackdown" title="[T.B.H] - Trackdown" text="A light and easy-to-understand OSINT framework" img="/img/trackdown.webp" }}
+        {{> project id="Trackdown" title="[T.B.H] - Trackdown" text="A light and easy-to-understand OSINT framework" img="/img/trackdown-banner.webp" }}
 
       </div>
  
     </section>
 
-    {{> blog id="lomcode" }}
+    {{> blog }}
 
     {{> contact id="contact" }}
 
