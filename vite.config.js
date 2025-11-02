@@ -2,6 +2,8 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path';
 import tailwindcss from '@tailwindcss/vite'
 import handlebars from 'vite-plugin-handlebars';
+import htmlMinifier from 'vite-plugin-html-minifier-terser'
+
 
 async function fetchLatestPosts(limit = 5) {
   const feedUrl = 'https://blog.bareket.co/feeds/posts/default?alt=json';
@@ -122,5 +124,19 @@ export default defineConfig({
        },
      },
     }),
+    htmlMinifier({
+      minifyOptions: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeEmptyAttributes: true,
+        useShortDoctype: true,
+      }
+    })
   ],
+  build: {
+    minify: 'esbuild', // Disables all minification
+    target: 'es2017',
+    cssMinify: 'esbuild'
+  },
 })
