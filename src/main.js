@@ -17,7 +17,7 @@ function blogfeed(data){
                      || '#';
         const title = post.title?.$t || '';
         const excerpt = truncateTo20Words(post.content?.$t || post.summary?.$t || '');
-        const imgUrl = post?.media$thumbnail?.url ? thumbnailResize(post.media$thumbnail.url, 500) : 'https://placehold.co/320x200/png';
+        const imgUrl = post?.media$thumbnail?.url ? getImage(post ,500, 312, 195) : 'https://placehold.co/320x200/png';
 
         anchor.href = link;
         const imgEl = anchor.querySelector("img");
@@ -40,7 +40,7 @@ function blogfeed(data){
             element.querySelector("h3").textContent = post.title.$t
             element.querySelector("p").textContent = truncateTo20Words(post.content.$t)
             if(post?.media$thumbnail?.url){
-                element.querySelector("img").src = thumbnailResize(post.media$thumbnail.url , 500)
+                element.querySelector("img").src = getImage(post ,500, 312, 195)
             }
         } catch (e) { /* ignore malformed entries */ }
     });
@@ -62,8 +62,22 @@ function truncateTo20Words(input) {
   return words.length > 20 ? truncated + '...' : truncated;
 }
 
-function thumbnailResize(url, size = 400) {
-    return url.replace(/\/s72(-[^/]*)?\//, `/s${size}$1/`);
+const getImage = (entry, size = 500, width, height) => {
+  const defaultUrl = 'https://placehold.co/320x200/png';
+  let url = entry?.media$thumbnail?.url;
+  if (!url) return defaultUrl;
+  url = url.replace(
+    /\/s\d+(-w\d+-h\d+(-[a-z])?-c)?\//,
+    `/${buildSizeSegment(size, width, height)}/`
+  );
+
+  return url;
+};
+
+function buildSizeSegment(size, width, height) {
+  let segment = `s${size}`;
+  if (width && height) segment += `-w${width}-h${height}-c`;
+  return segment;
 }
 
 // Contact Form functionality

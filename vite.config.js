@@ -5,6 +5,24 @@ import handlebars from 'vite-plugin-handlebars';
 import htmlMinifier from 'vite-plugin-html-minifier-terser'
 
 
+const getImage = (entry, size = 500, width, height) => {
+  const defaultUrl = 'https://placehold.co/320x200/png';
+  let url = entry?.media$thumbnail?.url;
+  if (!url) return defaultUrl;
+  url = url.replace(
+    /\/s\d+(-w\d+-h\d+(-[a-z])?-c)?\//,
+    `/${buildSizeSegment(size, width, height)}/`
+  );
+
+  return url;
+};
+
+function buildSizeSegment(size, width, height) {
+  let segment = `s${size}`;
+  if (width && height) segment += `-w${width}-h${height}-c`;
+  return segment;
+}
+
 async function fetchLatestPosts(limit = 5) {
   const feedUrl = 'https://blog.bareket.co/feeds/posts/default?alt=json';
   try {
@@ -19,11 +37,7 @@ async function fetchLatestPosts(limit = 5) {
       const textOnly = excerptSource.replace(/<[^>]*>/g, '').trim();
       const words = textOnly.split(/\s+/);
       const excerpt = words.slice(0, 20).join(' ') + (words.length > 20 ? '...' : '');
-
-      const img = entry?.media$thumbnail?.url
-        ? entry.media$thumbnail.url.replace(/\/s72(-[^/]*)?\//, '/s500$1/')
-        : 'https://placehold.co/320x200/png';
-
+      const img = getImage(entry, 500, 312, 195);
       const url = (entry.link || []).find(l => l.rel === 'alternate')?.href
         || (entry.link && entry.link[2] && entry.link[2].href)
         || '#';
