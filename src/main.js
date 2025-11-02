@@ -1,4 +1,4 @@
-import './style.css'
+// import './style.css'
 
 
 const blogAPI = "https://blog.bareket.co/feeds/posts/default?alt=json-in-script&callback=blogfeed";
