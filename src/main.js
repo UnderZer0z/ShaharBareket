@@ -4,7 +4,7 @@
 const blogAPI = "https://blog.bareket.co/feeds/posts/default?alt=json-in-script&callback=blogfeed";
 
 function blogfeed(data){
-    console.log(data.feed.entry)
+    // console.log(data.feed.entry)
 
     // update up to 5 baked list items
     const posts = data.feed.entry || [];
@@ -30,7 +30,7 @@ function blogfeed(data){
 
     // existing blog list handling (keeps compatibility)
     let articles = document.querySelectorAll("#blog li a");
-    console.log(articles)
+    // console.log(articles)
     articles.forEach((element , index) => {
         let post = data.feed.entry[index]
         if(!post) return;
