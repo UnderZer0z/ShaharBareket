@@ -1,0 +1,35 @@
+backend:
+  name: github
+  repo: UnderZer0z/ShaharBareket
+  branch: main
+
+# Enable local development backend
+local_backend: true
+
+media_folder: "public/img"
+public_folder: "/img"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "src/content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "text", widget: "string"}
+      - {label: "Image", name: "img", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Excerpt", name: "excerpt", widget: "string"}
+      - {label: "Featured Image", name: "img", widget: "image", required: false}
+      - {label: "External URL", name: "url", widget: "string", required: false}
+      - {label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD", value_format: "YYYY-MM-DD"}
+      - {label: "Body", name: "body", widget: "markdown"}

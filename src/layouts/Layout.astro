@@ -1,0 +1,32 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Shahar Bareket personal website - Software Developer, Maker, and Tech Enthusiast. Explore my projects and get in touch!" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/dino.gif" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://blogger.googleusercontent.com" crossorigin>
+    <link rel="dns-prefetch" href="https://blogger.googleusercontent.com">
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  @import "tailwindcss";
+  @import "../style.css";
+  @theme {
+    --breakpoint-m: 900px;
+  }
+</style>
