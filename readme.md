@@ -25,9 +25,14 @@ npm run dev
 To run Decap CMS locally for editing content:
 1. Start the Decap CMS local proxy server:
    ```sh
-   npx decap-cms-proxy-server
+   npm run cms
    ```
-2. Start the dev server (`npm run dev`) and visit `http://localhost:4321/admin/` in your browser.
+   *(or `npx decap-server`)*
+2. In a separate terminal, start the dev server:
+   ```sh
+   npm run dev
+   ```
+3. Visit `http://localhost:4321/admin/index.html` in your browser.
 
 ## Production Build
 
